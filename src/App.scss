@@ -1,0 +1,105 @@
+.App {
+  min-width: 850px;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+footer {
+  background-color: #0c6e77;
+}
+
+.copyright {
+  border-top: 1px #04808c solid;
+  display: table;
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  color: white;
+  .copyright-row {
+    display: table-row;
+
+    p {
+      display: table-cell;
+      padding: 5px 0px;
+    }
+    .payments {
+      text-align: right;
+    }
+
+    img:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.contact {
+  display: table;
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  color: white;
+  .contact-row {
+    display: table-row;
+    p,
+    h4,
+    div {
+      display: table-cell;
+      padding: 5px 0px;
+    }
+    .social svg:not(:first-child) {
+      margin-left: 29px;
+    }
+    .contact-form {
+      display: table;
+      width: 100%;
+      text-align: right;
+      button {
+        border-radius: 0px;
+        background-color: #0c6e77;
+        color: white;
+        border: 1px #04808c solid;
+        width: 25%;
+      }
+      input {
+        width: 75%;
+        outline: none;
+        border: none;
+        background-color: #0c6e77;
+        border-bottom: 1px #04808c solid;
+        caret-color: white;
+        color: white;
+      }
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+  button:focus {
+    outline: none;
+  }
+  // .contact-row:not(:last-child) {
+  //   width: 15%;
+  // }
+  // .contact-row:last-child {
+  //   width: 40%;
+  // }
+}
